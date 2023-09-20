@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Palette+Mosaic&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    font-family: 'Finger Paint', cursive;
+     ;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.Signup{
+    max-width: 1000px;
+    height: 900px;
+    margin: 4% auto;
+    display:grid;
+    column-gap: 1.0rem;
+    grid-template-columns: 33.0rem 33.0rem 33.0rem;
+    grid-template-rows: 3fr 4fr 5fr 5fr 5fr 4fr 3fr;
+
+}
+
+.signup_form{
+      grid-column: 2/3;
+      grid-row: 3/6;
+      background: #2980B9;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      border-radius: 3.0rem;
+
+      display: flex;
+      margin-top: 1.0rem;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+}
+
+.music{
+    font-family: 'Finger Paint', cursive;
+      font-size: 3.0rem;
+      margin-bottom: 1.0rem;
+      position: relative;
+}
+.music::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 3px;
+    width:140px;
+    margin-left: 3rem;
+    background-color: rgb(39, 120, 173);
+    bottom: -0.4px;
+  }
+
+.signup_box{
+    display: flex;
+    margin-top: 1.0rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup_input{
+    margin-left: .8rem;
+    height: 3.5rem;
+    width: 20.9rem;
+   border: none;
+   border-bottom: 3px solid black;
+   font-size: 1.5rem;
+   font-weight: bold;
+  font-family: 'Finger Paint', cursive;
+  padding-left: 10px;
+}
+
+
+
+i{
+ font-size: 2.0rem;
+}
+
+
+.signup_left-img{
+    position: relative;
+
+    grid-column: 3/4;
+    grid-row: 1/4;
+
+     width: 33.0rem;
+     height: 38.0rem;
+
+    border-radius: 3.0rem;
+    background-image: url(img/87d4db64.jpeg);
+    background-size: 380px;
+
+     animation-name: left;
+     animation-duration: 10s;
+}
+
+.signup_right-img{
+    position: relative;
+  grid-column: 1/2;
+  grid-row: 5/8;
+  border-radius: 3.0rem; 
+  background-image: url(img/mgid_ao_image_mtv.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 33.0rem;
+  height: 38.0rem;
+
+  animation-name: right;
+  animation-duration: 10s;
+  
+}
+
+.signup_buttom_submit{
+    padding: 12px 30px;
+    width: 50%;
+    margin-top: 40px ;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-family: 'Finger Paint', cursive;
+    
+    
+}
+
+@keyframes left {
+
+     0%{
+      top: 0px;
+    }
+    50%{
+       top: 520px
+    }
+    100%{
+     top: 0px;
+    } 
+    
+}
+
+@keyframes right{
+
+    0%{
+       bottom: 0px
+    }
+    50%{
+       bottom:520px ;
+       
+    }
+    100%{
+        bottom: 0px;
+    }
+}
+
+
